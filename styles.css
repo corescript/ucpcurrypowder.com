@@ -1,0 +1,245 @@
+
+    #html,body
+    {
+        width: 100%;
+        position: absolute;
+       font-family: 'Roboto Condensed', sans-serif;
+        padding-top: 80px;
+        background-color:white;
+        overflow-x: hidden
+    }
+#logo
+    {   
+        font-size: 19px;
+        font-family: 'Lobster', cursive;
+    }
+#navbar
+    {
+        font-family: 'Droid Sans', sans-serif;
+    width: 100%;
+        height: 100px;
+    }
+.navbar-nav > li > a {
+   line-height: 50px;
+    
+}  
+.navbar-collapse.in
+    {
+        margin-top: 20px;
+        background-color:#fefefe;
+    }
+    
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+    
+    .one-edge-shadow {
+	-webkit-box-shadow: 0 6px 10px -6px black;
+	   -moz-box-shadow: 0 6px 10px -6px black;
+	        box-shadow: 0 6px 10px -6px black;
+}
+    
+.btn-primary {
+    background:black;
+    color: #ffffff;
+        border-color: black;
+    border-style: solid;
+    border-width: 2px; 
+    border-radius: 0 !important;
+    width: 150px;
+    
+    }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #ffffff;
+    color: black;
+     border-color: black;
+    
+    border-width: 2px;
+    transition: all 0.9s ease 0s;
+}
+        @font-face {
+    font-family:Manjari-Bold;
+    src: url(Manjari-Bold.ttf);
+}
+
+.carousel-content {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-family:Manjari-Bold;
+    font-size: 7vw;
+    
+}    
+ .item.next .carousel-content {
+    
+}
+
+/*.carousel-content {
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+     
+} 
+ */   
+.carousel-content {
+    opacity: 0;
+    animation: fade 5s linear;
+}
+
+
+@keyframes fade {
+  0%{ opacity: 0 }
+  25% { opacity: 0 }
+    75% { opacity: 1 }
+100%{ opacity: 0 }
+    }
+    
+    
+    
+    
+    
+.shadowin {
+   -moz-box-shadow:    inset 0 0 20px #000000;
+   -webkit-box-shadow: inset 0 0 20px #000000;
+   box-shadow:         inset 0 0 20px #000000;
+}  
+.shadowout {
+   -moz-box-shadow:     0 0 20px #000000;
+   -webkit-box-shadow:  0 0 20px #000000;
+   box-shadow:          0 0 20px #000000;
+}     
+ .boxshadowout {
+   -moz-box-shadow:     0 0 10px #000000;
+   -webkit-box-shadow:  0 0 10px #000000;
+   box-shadow:          0 0 10px #000000;
+}     
+ 
+.bottom-inshadow
+{
+    box-shadow: inset 0 -7px 9px -7px #000000;
+    
+
+    } 
+    
+
+    
+    #wrapper{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.content{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000;
+    position: relative;
+    z-index: 100;
+}
+
+.background{
+    color: #999999;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -100;
+}    
+    
+    
+ #footlink
+    {
+        color: grey;
+        text-decoration:none;
+        transition: all 0.9s ease 0s;
+    }
+    
+  #footlink:hover
+    {
+      color: white;  
+        transition: all 0.5s ease 0s;
+    }
+    
+    
+.gly
+    {
+        
+        font-size: 40px;
+    }
+    .hi{
+        font-size: 18px;
+    }
+
+    
+#item-description 
+    {
+       text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+   height: 120px;
+  
+    }
+    
+  #loader
+     {   
+      position: absolute;
+         left: 50%;  
+         top: 40%;
+        margin-left: -40px;
+         margin-top: -40px;
+     }
+    
+   #loadertxt
+     {
+         color: #3e8e3d;
+         font-family: 'Lobster', cursive; 
+         position: absolute;
+         top:50%;
+        left:50%;
+         font-size: 20px;
+         margin-left: -80px;
+     }
+    #loadcont
+     {
+         
+         top:0;     
+         position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 9999; /* Higher than anything else in the document */
+        background-color: white;
+     }
+    
